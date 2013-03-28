@@ -13,8 +13,7 @@ except ImportError:
 packages = ['getme',]
 
 requires = [
-    'requests>=1.0.0',
-    'beautifulsoup4>=4.1.3'
+    'beautifulsoup4>=4.1.3',
 ]
 
 setup(
@@ -26,7 +25,7 @@ setup(
     author='Quang Quach',
     author_email='me@quang.be',
     packages=packages
-    package_dir={'crawy': 'crawy'},
+    package_dir={'getme': 'getme'},
     install_requires=requires,
     include_package_data=True,
     zip_safe=False,
