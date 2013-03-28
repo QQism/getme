@@ -10,3 +10,5 @@
 """
 __title__ = 'getme'
 __version__ = '0.0.1'
+
+from .models import Getme
