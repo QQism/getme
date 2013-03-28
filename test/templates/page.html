@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <title>This is the page for getme testing</title>
+  </head>
+  <body>
+    <div>
+    <br/>
+    {% if single_string %}
+    <span name='single-string'>{{ single_string }}</span>
+    {% endif %}
+    {% if single_list %}
+    <ul name='single-list'>
+      {% for item in single_list %}
+      <li>{{ item }}</li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+
+    {% if odd_even_list %}
+    <ul name='single-odd-even-list'>
+      {% for item in odd_even_list %}
+      <li class="{{ loop.cycle('odd', 'even') }}">{{ item }}</li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+
+    {% if people %}
+    <table>
+      <tbody>
+      {% for person in people %}
+      <tr>
+        {% for key, value in person.items() %}
+        <td class='{{key}}'>{{ value }}</td>
+        {% endfor %}
+      </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+    {% endif %}
+    </div>
+    <footer></footer>
+  </body>
+</html>
