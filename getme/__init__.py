@@ -4,7 +4,7 @@
     getme
     ~~~~~
 
-    An HTML extraction template
+    An HTML extractor by a simple template
     :copyright: (c) 2013 by Quang Quach
     :license: BSD, see LICENSE for more details
 """

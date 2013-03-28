@@ -3,7 +3,7 @@
 import os
 import sys
 
-import crawy
+import getme
 
 try:
     from setuptools import setup
@@ -19,7 +19,7 @@ requires = [
 setup(
     name='getme',
     version=crawy.__version__,
-    description='HTML extraction template',
+    description='AN HTML extractor by a simple template',
     long_description=open('README.rst').read() + '\n\n' + open('HISTORY.rst').read(),
     license=open('LICENSE').read(),
     author='Quang Quach',
@@ -29,5 +29,15 @@ setup(
     install_requires=requires,
     include_package_data=True,
     zip_safe=False,
-    platforms='any'
+    platforms='any',
+    classifiers=(
+        'Development Status :: 2 - Pre-Alpha',
+        'Intended Audience :: Developers',
+        'Natural Language :: English'
+        'Topic :: Text Processing :: Markup :: HTML',
+        'License :: OSI Approved :: BSD License',
+        'Programming Language :: Python :: 2.6'
+        'Programming Language :: Python :: 2.7'
+        'Programming Language :: Python :: 3'
+    ),
 )
