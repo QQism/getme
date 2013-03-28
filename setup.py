@@ -18,7 +18,7 @@ requires = [
 
 setup(
     name='getme',
-    version=crawy.__version__,
+    version=getme.__version__,
     description='AN HTML extractor by a simple template',
     long_description=open('README.rst').read() + '\n\n' + open('HISTORY.rst').read(),
     license=open('LICENSE').read(),
