@@ -25,6 +25,7 @@ setup(
     author='Quang Quach',
     author_email='me@quang.be',
     packages=packages,
+    package_data={'': ['LICENSE',]},
     package_dir={'getme': 'getme'},
     install_requires=requires,
     include_package_data=True,
