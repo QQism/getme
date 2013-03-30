@@ -19,11 +19,12 @@ requires = [
 setup(
     name='getme',
     version=getme.__version__,
-    description='AN HTML extractor by a simple template',
+    description='An HTML extractor by a simple template',
     long_description=open('README.rst').read() + '\n\n' + open('HISTORY.rst').read(),
     license=open('LICENSE').read(),
     author='Quang Quach',
     author_email='me@quang.be',
+    url='https://github.com/quangquach/getme',
     packages=packages,
     package_data={'': ['LICENSE',]},
     package_dir={'getme': 'getme'},
